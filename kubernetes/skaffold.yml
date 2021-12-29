@@ -1,0 +1,21 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: oncobe/gateway
+      context: ../gateway
+      jib: {}
+    - image: oncobe/invoice
+      context: ../invoice
+      jib: {}
+    - image: oncobe/notification
+      context: ../notification
+      jib: {}
+    - image: oncobe/productorder
+      context: ../productorder
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+deploy:
+  kustomize: {}

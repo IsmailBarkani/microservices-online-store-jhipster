@@ -1,0 +1,17 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["gateway", "invoice", "notification", "productorder"],
+    "directoryPath": "../",
+    "clusteredDbApps": [],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "NmJiN2U5MWM1ZmM1MDI3YTU0YTc0M2E0OGVmMTkyYmRiYzlhZmNkMmRlNjNlNWRmZTE5NmFhNGI3MmJlZTEwYmZhMzBhZjQ0MjQwZDQxODM4NmM5OTY3YjUxOWY3NmRhNTZjOA==",
+    "dockerRepositoryName": "oncobe",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "mosig",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": false,
+    "ingressDomain": "",
+    "monitoring": "prometheus",
+    "istio": false
+  }
+}
